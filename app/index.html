@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', path='/style.css') }}">
+  <link rel="icon" href="{{ url_for('static', path='/favicon.ico') }}">
+  <title>YouTube Video Downloader</title>
+</head>
+<body class="text-center">
+  <div class="container d-flex center">
+    <main>
+      <h1>YouTube Video Downloader</h1>
+      <p>Paste a video link below.</p>
+      <form id="video-form">
+        <input type="search" id="video-input" placeholder="https://youtu.be/video_id">
+        <button type="submit" class="btn btn-main">Submit</button>
+      </form>
+      <div class="spinner"></div>
+      <div id="info"></div>
+    </main>
+  </div>
+  <script src="{{ url_for('static', path='/script.js') }}"></script>
+</body>
+</html>
