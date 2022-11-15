@@ -139,6 +139,7 @@ input[type="search"]:hover::-webkit-search-cancel-button {
 
 .spinner {
   width: 100%;
+  height: 80px;
 }
 
 .spinner::after { 
@@ -153,7 +154,7 @@ input[type="search"]:hover::-webkit-search-cancel-button {
   border-left: 4px solid rgba(255, 255, 255, 1.0);
   border-bottom: 4px solid rgba(255, 255, 255, 1.0);
   border-right: 4px solid rgba(255, 255, 255, 0.0);
-  animation: spinner .7s linear infinite;
+  animation: spinner 1s linear infinite;
 }
 
 @keyframes spinner {
